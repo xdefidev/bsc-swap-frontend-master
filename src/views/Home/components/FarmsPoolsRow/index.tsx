@@ -51,11 +51,11 @@ const FarmsPoolsRow = () => {
 
   const getPoolText = (pool: Pool) => {
     if (pool.isAutoVault) {
-      return t('Auto MetaFloki')
+      return t('Auto MetaFlokiAvatar')
     }
 
     if (pool.sousId === 0) {
-      return t('Manual MetaFloki')
+      return t('Manual MetaFlokiAvatar')
     }
 
     return t('Stake %stakingSymbol% - Earn %earningSymbol%', {

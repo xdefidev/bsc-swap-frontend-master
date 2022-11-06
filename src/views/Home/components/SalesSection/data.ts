@@ -19,14 +19,14 @@ export const swapSectionData: SalesSectionProps = {
     attributes: [
       // { src: 'BNB', alt: 'BNB token' },
       { src: 'TREE', alt: 'BTC token' },
-      // { src: 'MetaFloki', alt: 'MetaFloki token' },
+      // { src: 'MetaFlokiAvatar', alt: 'MetaFlokiAvatar token' },
     ],
   },
 }
 
 export const earnSectionData: SalesSectionProps = {
   headingText: 'Earn passive income with crypto.',
-  bodyText: 'PancakeSwap makes it easy to make your crypto work for you.',
+  bodyText: 'Metaflokiavatarswap makes it easy to make your crypto work for you.',
   reverse: true,
   primaryButton: {
     to: '/farms',
@@ -43,23 +43,23 @@ export const earnSectionData: SalesSectionProps = {
     attributes: [
       { src: 'pie', alt: 'Pie chart' },
       { src: 'stonks', alt: 'Stocks chart' },
-      { src: 'folder', alt: 'Folder with MetaFloki token' },
+      { src: 'folder', alt: 'Folder with MetaFlokiAvatar token' },
     ],
   },
 }
 
 export const cakeSectionData: SalesSectionProps = {
-  headingText: 'MetaFloki makes our world go round.',
+  headingText: 'MetaFlokiAvatars makes our world go round.',
   bodyText:
-    'MetaFloki token is at the heart of the MetaFlokiAvatarSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'MetaFlokiAvatar token is at the heart of the MetaFlokiAvatarSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
     to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
-    text: 'Buy MetaFloki',
+    text: 'Buy MetaFlokiAvatar',
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/tokenomics/MetaFloki',
+    to: 'https://docs.pancakeswap.finance/tokenomics/MetaFlokiAvatar',
     text: 'Learn',
     external: true,
   },
@@ -69,7 +69,7 @@ export const cakeSectionData: SalesSectionProps = {
     attributes: [
       { src: 'bottom-right', alt: 'Small 3d pancake' },
       { src: 'top-right', alt: 'Small 3d pancake' },
-      { src: 'coin', alt: 'MetaFloki token' },
+      { src: 'coin', alt: 'MetaFlokiAvatar token' },
       { src: 'top-left', alt: 'Small 3d pancake' },
     ],
   },

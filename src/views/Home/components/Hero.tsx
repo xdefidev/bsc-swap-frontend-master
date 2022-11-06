@@ -103,7 +103,7 @@ const Hero = () => {
         justifyContent="center"
       >
         <Flex flex="1" flexDirection="column">
-          <Heading scale="xxl" color="secondary" mb="24px">
+          <Heading scale="xl" color="secondary" mb="24px">
             {t('Welcome to MetaFlokiAvatarSwap.')}
           </Heading>
           <Heading scale="md" mb="24px">
@@ -117,7 +117,7 @@ const Hero = () => {
           </Flex>
         </Flex>
         <Flex
-          height={['400px', null, null, '100%']}
+          height={['100px', null, null, '100%']}
           width={['192px', null, null, '100%']}
           flex={[null, null, null, '1']}
           mb={['24px', null, null, '0']}
