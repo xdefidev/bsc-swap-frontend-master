@@ -94,7 +94,8 @@ const Hero = () => {
   return (
     <>
       <BgWrapper>
-        <InnerWrapper>{theme.isDark ? <SlideSvgDark width="100%" /> : <SlideSvgLight width="100%" />}</InnerWrapper>
+        {/* <InnerWrapper>{theme.isDark ? <SlideSvgDark width="100%" /> : <SlideSvgLight width="100%" />}</InnerWrapper> */}
+        <img src="/images/wallpaper.jpg" alt="bg" height={100} style={{ "opacity": "0.7"}} />
       </BgWrapper>
       <Flex
         position="relative"
@@ -112,7 +113,7 @@ const Hero = () => {
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}
             <Link mr="16px" href="/swap">
-              <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade Now')}</Button>
+              <Button variant={!account ? 'primary' : 'primary'}>{t('Trade Now')}</Button>
             </Link>
           </Flex>
         </Flex>

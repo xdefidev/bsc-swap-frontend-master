@@ -118,13 +118,17 @@ export const useGetLastOraclePrice = () => {
  */
 export const useGetCurrentRoundLockTimestamp = () => {
 
-// remove try
 
-  try{
+
+  
 
   const currentRound = useGetCurrentRound()
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const intervalSeconds = useGetIntervalSeconds()
+
+  if (!currentRound) {
+    return undefined
+  }
 
   if (!currentRound.lockTimestamp) {
     return currentRound.startTimestamp + intervalSeconds
@@ -132,9 +136,5 @@ export const useGetCurrentRoundLockTimestamp = () => {
 
   return currentRound.lockTimestamp
 
-  } catch (error) {
-    console.log(error)
-  }
-  
-  return null
+ 
 }

@@ -41,9 +41,9 @@ export const earnSectionData: SalesSectionProps = {
   images: {
     path: '/images/home/earn/',
     attributes: [
-      { src: 'pie', alt: 'Pie chart' },
-      { src: 'stonks', alt: 'Stocks chart' },
-      { src: 'folder', alt: 'Folder with MetaFlokiAvatar token' },
+      // { src: 'pie', alt: 'Pie chart' },
+      // { src: 'stonks', alt: 'Stocks chart' },
+      { src: 'meta-logo', alt: 'Folder with MetaFlokiAvatar token' },
     ],
   },
 }
@@ -65,12 +65,12 @@ export const cakeSectionData: SalesSectionProps = {
   },
 
   images: {
-    path: '/images/home/cake/',
+    path: '/images/home/earn/',
     attributes: [
-      { src: 'bottom-right', alt: 'Small 3d pancake' },
-      { src: 'top-right', alt: 'Small 3d pancake' },
-      { src: 'coin', alt: 'MetaFlokiAvatar token' },
-      { src: 'top-left', alt: 'Small 3d pancake' },
+      // { src: 'bottom-right', alt: 'Small 3d pancake' },
+      // { src: 'top-right', alt: 'Small 3d pancake' },
+      { src: 'Metafloki-coin', alt: 'MetaFlokiAvatar token' },
+      // { src: 'top-left', alt: 'Small 3d pancake' },
     ],
   },
 }
