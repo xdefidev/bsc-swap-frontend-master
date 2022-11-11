@@ -59,6 +59,14 @@
       "logoURI": "https://pancakeswap.finance/images/tokens/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82.png"
     },
     {
+      "name": "METAFLOKIX Token",
+      "symbol": "MFAX",
+      "address": "0x640fCe3863B299043E889Dc1089178347783DF33",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://pancakeswap.finance/images/tokens/0x640fCe3863B299043E889Dc1089178347783DF33.png"
+    },
+    {
       "name": "Venus",
       "symbol": "XVS",
       "address": "0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63",

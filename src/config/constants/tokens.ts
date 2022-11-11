@@ -3,10 +3,10 @@ import { ChainId, Token } from '@pancakeswap/sdk'
 export const CAKE: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(
     ChainId.MAINNET,
-    '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+    '0x640fCe3863B299043E889Dc1089178347783DF33',
     18,
-    'CAKE',
-    'PancakeSwap Token',
+    'MFAX',
+    'METAFLOKIX Token',
   ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,
@@ -67,7 +67,7 @@ const tokens = {
   cake: {
     symbol: 'CAKE',
     address: {
-      56: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+      56: '0x640fCe3863B299043E889Dc1089178347783DF33',
       97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
     },
     decimals: 18,
@@ -823,7 +823,7 @@ const tokens = {
   syrup: {
     symbol: 'SYRUP',
     address: {
-      56: '0x009cF7bC57584b7998236eff51b98A168DceA9B0',
+      56: '0x8f88EbA4Fdb441861Dc497eCe925e9041d267365',
       97: '0xfE1e507CeB712BDe086f3579d2c03248b2dB77f9',
     },
     decimals: 18,

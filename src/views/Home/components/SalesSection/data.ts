@@ -54,7 +54,7 @@ export const cakeSectionData: SalesSectionProps = {
     'MetaFlokiAvatar token is at the heart of the MetaFlokiAvatarSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   reverse: false,
   primaryButton: {
-    to: '/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+    to: '/swap?outputCurrency=0x640fCe3863B299043E889Dc1089178347783DF33',
     text: 'Buy MetaFlokiAvatar',
     external: false,
   },
