@@ -339,7 +339,7 @@ const HowToPlay: React.FC = () => {
       <Divider />
       <Flex justifyContent="center" alignItems="center" flexDirection={['column', 'column', 'row']}>
         <Flex maxWidth="240px" mr="8px" mb="16px">
-          <img src="/images/lottery/tombola.png" alt="tombola bunny" />
+          <img src="images/home/earn/Metafloki-coin@2x.png" alt="tombola bunny" />
         </Flex>
         <Flex maxWidth="300px" flexDirection="column">
           <Heading mb="16px" scale="md">

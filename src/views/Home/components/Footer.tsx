@@ -88,8 +88,9 @@ const Footer = () => {
   return (
     <>
       <BgWrapper>
-        <Flex alignItems="center" justifyContent="center" width="100%" height="100%">
-          <StyledSunburst />
+        <Flex alignItems="center" justifyContent="right" width="100%" height="100%" style={{backgroundColor: "#000"}}>
+          {/* <StyledSunburst /> */}
+          <img src="images/METAFLOKI-Land-God.png" alt="bg" style={{opacity: "0.8"}}/>
         </Flex>
       </BgWrapper>
       <FloatingPancakesWrapper>

@@ -21,7 +21,7 @@ const StyledSubheading = styled(Heading)`
 
 const StyledHeading = styled(Heading)`
   color: #ffffff;
-  background: -webkit-linear-gradient(#7645d9 0%, #452a7a 100%);
+  background: -webkit-linear-gradient(#5dccf8 0%, #452a7a 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 6px transparent;
@@ -32,7 +32,7 @@ const StyledHeading = styled(Heading)`
 const Wrapper = styled.div`
   border-radius: 32px;
   width: 100%;
-  background-image: linear-gradient(#7645d9, #452a7a);
+  background-image: linear-gradient(#5dccf8, #452a7a);
   max-height: max-content;
   overflow: hidden;
 `

@@ -82,7 +82,7 @@ const PrizeTotalBalance = styled(Balance)`
 
 const StyledBuyTicketButton = styled(BuyTicketsButton)<{ disabled: boolean }>`
   background: ${({ theme, disabled }) =>
-    disabled ? theme.colors.disabled : 'linear-gradient(180deg, #7645d9 0%, #452a7a 100%)'};
+    disabled ? theme.colors.disabled : 'linear-gradient(180deg, #5dccf8 0%, #452a7a 100%)'};
   width: 200px;
   ${({ theme }) => theme.mediaQueries.xs} {
     width: 240px;
@@ -249,13 +249,13 @@ const Hero = () => {
   return (
     <Flex flexDirection="column" alignItems="center" justifyContent="center">
       <Decorations />
-      <StarsDecorations display={['none', 'none', 'block']}>
+      {/* <StarsDecorations display={['none', 'none', 'block']}>
         <img src="/images/lottery/star-big.png" width="124px" height="109px" alt="" />
         <img src="/images/lottery/star-small.png" width="70px" height="62px" alt="" />
         <img src="/images/lottery/three-stars.png" width="130px" height="144px" alt="" />
         <img src="/images/lottery/ticket-l.png" width="123px" height="83px" alt="" />
         <img src="/images/lottery/ticket-r.png" width="121px" height="72px" alt="" />
-      </StarsDecorations>
+      </StarsDecorations> */}
       <Heading mb="8px" scale="md" color="#ffffff">
         {t('The MetaFlokiAvatarSwap Lottery')}
       </Heading>
