@@ -6,14 +6,14 @@ export const CAKE: { [chainId: number]: Token } = {
     '0x640fCe3863B299043E889Dc1089178347783DF33',
     18,
     'MFAX',
-    'METAFLOKIX Token',
+    'MetaFlokiX Token',
   ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,
     '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
     18,
-    'CAKE',
-    'PancakeSwap Token',
+    'MFAX',
+    'MetaFlokiX Token',
   ),
 }
 export const BUSD: { [chainId: number]: Token } = {
@@ -65,13 +65,22 @@ const tokens = {
     projectLink: 'https://www.binance.com/',
   },
   cake: {
-    symbol: 'CAKE',
+    symbol: 'MFAX',
     address: {
       56: '0x640fCe3863B299043E889Dc1089178347783DF33',
       97: '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
     },
     decimals: 18,
     projectLink: 'https://pancakeswap.finance/',
+  },
+  metafa: {
+    symbol: 'MetaFA Token',
+    address: {
+      56: '0x45984521e666ce3d471b956cd7e5e264fc3d6a17',
+      97: '',
+    },
+    decimals: 9,
+    projectLink: '',
   },
   pha: {
     symbol: 'PHA',

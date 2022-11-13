@@ -4,8 +4,8 @@ export default {
     56: '0x5afD356B4D36A8269275Adac6eDe7Ffbf4F2802d',
   },
   sousChef: {
-    97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
-    56: '0x6ab8463a4185b80905e05a9ff80a2d6b714b9e95',
+    97: '',
+    56: '0x50fF7232a3BD6DeE698339710955b0DEA9486125',
   },
   lotteryV2: {
     97: '0x5790c3534F30437641541a0FA04C992799602998',
@@ -48,7 +48,7 @@ export default {
     97: '0x24ec6962dbe874F6B67B5C50857565667fA0854F',
   },
   cakeVault: {
-    56: '0xa80240Eb5d7E05d3F250cF000eEc0891d00b51CC',
+    56: '0xF6305b74DF001ce1eeCC009921D31B3d95c4664f',
     97: '',
   },
   predictions: {

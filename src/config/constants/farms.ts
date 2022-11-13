@@ -16,24 +16,34 @@ const farms: FarmConfig[] = [
     quoteToken: tokens.wbnb,
   },
   {
-    pid: 251,
+    pid: 3,
     lpSymbol: 'MFAX-BNB LP',
     lpAddresses: {
       97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
-      56: '',
+      56: '0xe36a268c43626277040E62A51699F5396AB3Bc0C',
     },
     token: tokens.cake,
     quoteToken: tokens.wbnb,
   },
   {
-    pid: 252,
+    pid: 1,
     lpSymbol: 'BUSD-BNB LP',
     lpAddresses: {
       97: '',
-      56: '',
+      56: '0x58f876857a02d6762e0101bb5c46a8c1ed44dc16',
     },
     token: tokens.busd,
     quoteToken: tokens.wbnb,
+  },
+  {
+    pid: 2,
+    lpSymbol: 'MetaFlokiAvatars',
+    lpAddresses: {
+      97: '',
+      56: '0x45984521e666ce3d471b956cd7e5e264fc3d6a17',
+    },
+    token: tokens.metafa,
+    quoteToken: tokens.busd,
   },
 ]
 
