@@ -31,7 +31,7 @@ const HarvestAction: React.FunctionComponent<HarvestActionProps> = ({ pid, userD
   if (!earningsBigNumber.isZero()) {
     earnings = getBalanceAmount(earningsBigNumber)
     earningsBusd = earnings.multipliedBy(cakePrice).toNumber()
-    displayBalance = earnings.toFixed(3, BigNumber.ROUND_DOWN)
+    displayBalance = earnings.toFixed(5, BigNumber.ROUND_DOWN)
   }
 
   const [pendingTx, setPendingTx] = useState(false)

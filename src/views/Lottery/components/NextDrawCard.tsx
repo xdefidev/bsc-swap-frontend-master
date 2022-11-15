@@ -64,7 +64,7 @@ const NextDrawCard = () => {
   const ticketBuyIsDisabled = status !== LotteryStatus.OPEN || isTransitioning
 
   const cakePriceBusd = usePriceCakeBusd()
-  const prizeInBusd = amountCollectedInCake.times(cakePriceBusd)
+  const prizeInBusd = amountCollectedInCake.times(cakePriceBusd.toFixed(9))
   const endTimeMs = parseInt(endTime, 10) * 1000
   const endDate = new Date(endTimeMs)
   const isLotteryOpen = status === LotteryStatus.OPEN
@@ -101,7 +101,7 @@ const NextDrawCard = () => {
             fontSize="14px"
             color="textSubtle"
             textAlign={['center', null, null, 'left']}
-            unit=" CAKE"
+            unit=" MFAX"
             value={getBalanceNumber(amountCollectedInCake)}
             decimals={0}
           />

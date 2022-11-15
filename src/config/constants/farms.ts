@@ -35,16 +35,6 @@ const farms: FarmConfig[] = [
     token: tokens.busd,
     quoteToken: tokens.wbnb,
   },
-  {
-    pid: 2,
-    lpSymbol: 'MetaFlokiAvatars',
-    lpAddresses: {
-      97: '',
-      56: '0x45984521e666ce3d471b956cd7e5e264fc3d6a17',
-    },
-    token: tokens.metafa,
-    quoteToken: tokens.busd,
-  },
 ]
 
 export default farms

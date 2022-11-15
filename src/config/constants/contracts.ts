@@ -9,7 +9,7 @@ export default {
   },
   lotteryV2: {
     97: '0x5790c3534F30437641541a0FA04C992799602998',
-    56: '0x5aF6D33DE2ccEC94efb1bDF8f92Bd58085432d2c',
+    56: '0x38376c9d0eac9219521CA88DaB93DDa00c4dAf99',
   },
   multiCall: {
     56: '0xfF6FD90A470Aaa0c1B8A54681746b07AcdFedc9B',
@@ -52,7 +52,7 @@ export default {
     97: '',
   },
   predictions: {
-    56: '0x18B2A687610328590Bc8F2e5fEdDe3b582A49cdA',
+    56: '0x4c6d78b7B1F1Ae0f5825b33ED9AD8acb2DbCa3ad',
     97: '',
   },
   chainlinkOracle: {

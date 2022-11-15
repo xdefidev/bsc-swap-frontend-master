@@ -73,7 +73,7 @@ const StakeAction: React.FC<FarmCardActionsProps> = ({
     if (stakedBalanceBigNumber.gt(0)) {
       return stakedBalanceBigNumber.toFixed(8, BigNumber.ROUND_DOWN)
     }
-    return stakedBalanceBigNumber.toFixed(3, BigNumber.ROUND_DOWN)
+    return stakedBalanceBigNumber.toFixed(5, BigNumber.ROUND_DOWN)
   }, [stakedBalance])
 
   const [onPresentDeposit] = useModal(

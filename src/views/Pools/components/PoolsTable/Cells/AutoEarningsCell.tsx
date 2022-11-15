@@ -53,8 +53,8 @@ const AutoEarningsCell: React.FC<AutoEarningsCellProps> = ({ pool, account, user
 
   const { targetRef, tooltip, tooltipVisible } = useTooltip(
     <>
-      <Balance fontSize="16px" value={autoCakeToDisplay} decimals={3} bold unit=" MFAX" />
-      <Balance fontSize="16px" value={autoUsdToDisplay} decimals={2} bold prefix="~$" />
+      <Balance fontSize="16px" value={autoCakeToDisplay} decimals={5} bold unit=" MFAX" />
+      <Balance fontSize="16px" value={autoUsdToDisplay} decimals={5} bold prefix="~$" />
       {t('Earned since your last action')}
       <Text>{dateStringToDisplay}</Text>
     </>,
