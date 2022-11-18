@@ -108,7 +108,7 @@ const Hero = () => {
             {t('Welcome to MetaFlokiAvatarSwap.')}
           </Heading>
           <Heading scale="md" mb="24px">
-            {t('Trade, earn, and win crypto on the most popular decentralized platform in the galaxy.')}
+            {t('Swap, earn, and win crypto with the Avatars.')}
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}

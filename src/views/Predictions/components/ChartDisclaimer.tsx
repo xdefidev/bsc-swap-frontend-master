@@ -59,13 +59,13 @@ const ChartDisclaimer: React.FC<InjectedModalProps> = ({ onDismiss }) => {
         <Text as="p" mb="16px" fontSize="14px" color="textSubtle">
           {t("Only the price from Chainlink (shown on the cards) determines the round's result.")}
         </Text>
-        <LinkExternal
+        {/* <LinkExternal
           href="https://docs.pancakeswap.finance/products/prediction/prediction-faq#what-are-you-using-for-your-price-feed"
           external
           mb="24px"
         >
           {t('Learn More')}
-        </LinkExternal>
+        </LinkExternal> */}
         <Box>
           <Button width="100%" onClick={handleConfirm} mb="16px">
             {t('I understand')}

@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { useAppDispatch } from 'state'
 import { useWeb3React } from '@web3-react/core'
@@ -120,4 +120,27 @@ export const usePriceCakeBusd = (): BigNumber => {
   }, [cakePriceBusdAsString])
 
   return cakePriceBusd
+}
+
+export const usePriceMFABusd = () => {
+  const [data, setData] = useState<number | null>(0)
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          'https://api.pancakeswap.info/api/v2/tokens/0x45984521E666ce3d471B956CD7e5e264fC3D6A17',
+        )
+        const responseData: any = await response.json()
+
+        setData(responseData.data.price)
+      } catch (error) {
+        console.error('Unable to fetch data:', error)
+      }
+    }
+
+    fetchData()
+  }, [setData])
+
+  return data
 }

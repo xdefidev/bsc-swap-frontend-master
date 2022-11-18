@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
-import { getCakeAddress } from 'utils/addressHelpers'
+import { useTotalSupply, useBurnedBalance, useMFATotalSupply } from 'hooks/useTokenBalance'
+import { getMFAAddress } from 'utils/addressHelpers'
 import { getBalanceNumber, formatLocalisedCompactNumber } from 'utils/formatBalance'
-import { usePriceCakeBusd } from 'state/farms/hooks'
+import { usePriceCakeBusd, usePriceMFABusd } from 'state/farms/hooks'
 import { Flex, Text, Heading, Skeleton } from '@pancakeswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import Balance from 'components/Balance'
@@ -41,16 +41,18 @@ const Grid = styled.div`
   }
 `
 
-const emissionsPerBlock = 17
+const emissionsPerBlock = 40
 
 const CakeDataRow = () => {
   const { t } = useTranslation()
-  const totalSupply = useTotalSupply()
-  const burnedBalance = getBalanceNumber(useBurnedBalance(getCakeAddress()))
+  const totalSupply = useMFATotalSupply()
+  const burnedBalance = getBalanceNumber(useBurnedBalance(getMFAAddress()))
   const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - burnedBalance : 0
+  const cakePriceusd = usePriceMFABusd()
+  console.log(cakePriceusd)
   const cakePriceBusd = usePriceCakeBusd()
-  const mcap = cakePriceBusd.times(cakeSupply)
-  const mcapString = formatLocalisedCompactNumber(mcap.toNumber())
+  const mcap = cakePriceusd  ? cakePriceusd * cakeSupply : 0
+  const mcapString = formatLocalisedCompactNumber(mcap)
 
   return (
     <Grid>
@@ -72,17 +74,22 @@ const CakeDataRow = () => {
       </StyledColumn>
       <StyledColumn noMobileBorder>
         <Text color="textSubtle">{t('Market cap')}</Text>
-        {mcap?.gt(0) && mcapString ? (
+        {mcap && mcapString ? (
           <Heading scale="lg">{t('$%marketCap%', { marketCap: mcapString })}</Heading>
         ) : (
           <Skeleton height={24} width={126} my="4px" />
         )}
       </StyledColumn>
-      <StyledColumn>
+        <StyledColumn>
+        <Text color="textSubtle">{t('Current Price')}</Text>
+
+        <Heading scale="lg">{t('$%mfaprice%', { mfaprice: cakePriceusd })}</Heading>
+      </StyledColumn>
+      {/* <StyledColumn>
         <Text color="textSubtle">{t('Current emissions')}</Text>
 
         <Heading scale="lg">{t('%cakeEmissions%/block', { cakeEmissions: emissionsPerBlock })}</Heading>
-      </StyledColumn>
+      </StyledColumn> */}
     </Grid>
   )
 }

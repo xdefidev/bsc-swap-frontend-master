@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
-import { getBep20Contract, getCakeContract } from 'utils/contractHelpers'
+import { getBep20Contract, getMFAContract, getCakeContract } from 'utils/contractHelpers'
 import { BIG_ZERO } from 'utils/bigNumber'
 import { simpleRpcProvider } from 'utils/providers'
 import useRefresh from './useRefresh'
@@ -65,6 +65,23 @@ export const useTotalSupply = () => {
   }, [slowRefresh])
 
   return totalSupply
+}
+
+export const useMFATotalSupply = () => {
+  const { slowRefresh } = useRefresh()
+  const [totalMFASupply, setTotalMFASupply] = useState<BigNumber>()
+
+  useEffect(() => {
+    async function fetchTotalSupply() {
+      const cakeContract = getMFAContract()
+      const supply = (await cakeContract.totalSupply()) * 10e8
+      setTotalMFASupply(new BigNumber(supply.toString()))
+    }
+
+    fetchTotalSupply()
+  }, [slowRefresh])
+
+  return totalMFASupply
 }
 
 export const useBurnedBalance = (tokenAddress: string) => {

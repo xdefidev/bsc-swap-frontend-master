@@ -22,7 +22,7 @@ const PredictionCardContent = () => {
   const [bnbWonInUsd, setBnbWonInUsd] = useState(0)
 
   const localisedBnbUsdString = formatLocalisedCompactNumber(bnbWonInUsd)
-  const bnbWonText = t('$%bnbWonInUsd% in BNB won so far', { bnbWonInUsd: localisedBnbUsdString })
+  const bnbWonText = t('A lot in BNB won so far')
   const [pretext, wonSoFar] = bnbWonText.split(localisedBnbUsdString)
 
   useEffect(() => {
@@ -58,7 +58,7 @@ const PredictionCardContent = () => {
         {bnbWonInUsd ? (
           <Heading color="#280D5F" my="8px" scale="xl" bold>
             {pretext}
-            {localisedBnbUsdString}
+           
           </Heading>
         ) : (
           <>

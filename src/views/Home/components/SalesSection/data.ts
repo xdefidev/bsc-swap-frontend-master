@@ -10,8 +10,8 @@ export const swapSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/',
-    text: 'Learn',
+    to: '',
+    text: '',
     external: true,
   },
   images: {
@@ -34,8 +34,8 @@ export const earnSectionData: SalesSectionProps = {
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/products/yield-farming',
-    text: 'Learn',
+    to: '',
+    text: '',
     external: true,
   },
   images: {
@@ -43,24 +43,24 @@ export const earnSectionData: SalesSectionProps = {
     attributes: [
       // { src: 'pie', alt: 'Pie chart' },
       // { src: 'stonks', alt: 'Stocks chart' },
-      { src: 'meta-logo', alt: 'Folder with MetaFlokiAvatar token' },
+      { src: 'METAFLOKI-Fountain', alt: 'Folder with MetaFlokiAvatar token' },
     ],
   },
 }
 
 export const cakeSectionData: SalesSectionProps = {
-  headingText: 'MetaFlokiAvatars makes our world go round.',
+  headingText: 'MFAX Utilities',
   bodyText:
-    'MetaFlokiAvatar token is at the heart of the MetaFlokiAvatarSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'MFAX token is at the central of the MetaFlokiAvatarSwap ecosystem. You can win it, farm it, spend it, stake it.',
   reverse: false,
   primaryButton: {
     to: '/swap?outputCurrency=0x640fCe3863B299043E889Dc1089178347783DF33',
-    text: 'Buy MetaFlokiAvatar',
+    text: 'Buy MFAX',
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/tokenomics/MetaFlokiAvatar',
-    text: 'Learn',
+    to: '',
+    text: '',
     external: true,
   },
 
@@ -69,7 +69,7 @@ export const cakeSectionData: SalesSectionProps = {
     attributes: [
       // { src: 'bottom-right', alt: 'Small 3d pancake' },
       // { src: 'top-right', alt: 'Small 3d pancake' },
-      { src: 'Metafloki-coin', alt: 'MetaFlokiAvatar token' },
+      { src: 'WATER-FLOKI-God', alt: 'MetaFlokiAvatar token' },
       // { src: 'top-left', alt: 'Small 3d pancake' },
     ],
   },

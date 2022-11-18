@@ -81,17 +81,29 @@ const Home: React.FC = () => {
         </OuterWedgeWrapper>
         <SalesSection {...swapSectionData} />
       </PageSection>
+      <iframe
+      width="100%"
+      height="400px"
+      src="https://www.youtube.com/embed/vbvenbBlerc"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+      title="Embedded youtube"
+    />
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background="#000"
         index={2}
         hasCurvedDivider={false}
       >
-        <OuterWedgeWrapper>
+        {/* <OuterWedgeWrapper>
           <InnerWedgeWrapper width="150%" top fill={theme.colors.background}>
             <WedgeTopRight />
           </InnerWedgeWrapper>
-        </OuterWedgeWrapper>
+          
+        </OuterWedgeWrapper> */}
+        
+        
         <SalesSection {...earnSectionData} />
         <FarmsPoolsRow />
       </PageSection>

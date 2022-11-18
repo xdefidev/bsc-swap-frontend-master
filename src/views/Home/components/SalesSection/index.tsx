@@ -61,8 +61,12 @@ const SalesSection: React.FC<SalesSectionProps> = (props) => {
         <Flex
           height={['192px', null, null, '100%']}
           width={['192px', null, null, '100%']}
+          alignSelf="center"
           flex={[null, null, null, '1']}
-          mb={['24px', null, null, '0']}
+          mb={['30px', null, null, '0']}
+          mt={['-30px', null, null, '0']}
+          
+      
         >
           <CompositeImage {...images} />
         </Flex>

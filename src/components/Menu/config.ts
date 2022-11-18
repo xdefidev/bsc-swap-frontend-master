@@ -76,7 +76,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   {
     label: t('Info'),
     icon: 'InfoIcon',
-    href: 'https://pancakeswap.info',
+    href: 'https://metaflokiavatars.com/',
   },
   // {
   //   label: t('IFO'),
@@ -89,7 +89,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
     items: [
       {
         label: t('Contact'),
-        href: 'https://docs.pancakeswap.finance/contact-us',
+        href: '',
       },
       // {
       //   label: t('Voting'),
@@ -97,11 +97,11 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
       // },
       {
         label: t('Github'),
-        href: 'https://github.com/pancakeswap',
+        href: '',
       },
       {
         label: t('Docs'),
-        href: 'https://docs.pancakeswap.finance',
+        href: '',
       },
       // {
       //   label: t('Blog'),

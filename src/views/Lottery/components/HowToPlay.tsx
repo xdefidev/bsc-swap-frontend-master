@@ -323,11 +323,11 @@ const HowToPlay: React.FC = () => {
             <li>
               <Text display="inline" color="textSubtle">
                 {t(
-                  '10,000 MFAX from the treasury is added to a lottery round every other day. This MFAX is of course also included in rollovers! Read more in our guide to ',
+                  '10,000,000 MFAX from the treasury is added to a lottery round every other day. This MFAX is of course also included in rollovers! Read more in our guide to ',
                 )}
-                <InlineLink href="https://docs.pancakeswap.finance/tokenomics/MFAX/MFAX-tokenomics">
+                {/* <InlineLink href="https://docs.pancakeswap.finance/tokenomics/MFAX/MFAX-tokenomics">
                   {t('MFAX Tokenomics')}
-                </InlineLink>
+                </InlineLink> */}
               </Text>
             </li>
           </BulletList>
@@ -347,9 +347,9 @@ const HowToPlay: React.FC = () => {
           </Heading>
           <Text>
             {t('Check our in-depth guide on')}{' '}
-            <InlineLink href="https://docs.pancakeswap.finance/products/lottery/lottery-guide">
+            {/* <InlineLink href="https://docs.pancakeswap.finance/products/lottery/lottery-guide">
               {t('how to play the MetaFlokiAvatarSwap Lottery!')}
-            </InlineLink>
+            </InlineLink> */}
           </Text>
         </Flex>
       </Flex>
